@@ -16,4 +16,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: version of python && docker
-        run: python --version && docker -version
+        run: python --version && docker --version

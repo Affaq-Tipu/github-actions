@@ -2,7 +2,6 @@ name: CICD
 on:
   workflow_dispatch:
 jobs:
-
   code:
     runs-on: ubuntu-latest
     steps:
@@ -17,4 +16,4 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: test the code
-          run: echo"code tested"
+          run: echo"code tested sucessful"

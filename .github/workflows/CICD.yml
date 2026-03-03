@@ -8,12 +8,12 @@ jobs:
     steps:
       - name: checkout code
         run: echo"clone code from github"
-   build:
+  build:
      runs-on: ubuntu-latest
      steps:
        - name: build docker container
          run: echo"docker container build"
-    test:
+  test:
       runs-on: ubuntu-latest
       steps:
         - name: test the code

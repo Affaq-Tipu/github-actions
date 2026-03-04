@@ -8,12 +8,14 @@ jobs:
       - name: checkout code
         run: echo "clone code from github"
   build:
+     needs: code
      runs-on: ubuntu-latest
      steps:
        - name: build docker container
          run: echo "docker container build"
   test:
-      runs-on: ubuntu-latest
-      steps:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
         - name: test the code
           run: echo "code tested sucessful hogya"

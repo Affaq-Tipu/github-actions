@@ -1,7 +1,10 @@
 name: hello
 on:
   push:
-    branches: [main]
+    
+   branches: [main]
+   paths:
+     - '**.yml'
 jobs:
   greet:
     runs-on: ubuntu-latest
